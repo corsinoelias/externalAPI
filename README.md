@@ -7,10 +7,10 @@
 
 ## Summary
 
-I received a challenge to make an application in record time about questions using an external API to Sharepoint.
+I received a challenge to make an application in record time about answer quizzes using an external API to Sharepoint.
 This application has been made using React, Sharepoint Framework, and Typescript.
 
-You can select the category in which you receive the questions, it has game status management, scoring, and sounds when you get a question right or wrong.
+You can select the category in which you receive the questions, it has global game state management, scoring, and sounds when you get a question right or wrong.
 
 Finally, the results are published in a SharePoint list that has a Power Automate trigger to send an email with the results.
 
