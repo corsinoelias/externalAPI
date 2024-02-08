@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "time-api-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/timeApi/TimeApiWebPart.js",
+          "manifest": "./src/webparts/timeApi/TimeApiWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "TimeApiWebPartStrings": "lib/webparts/timeApi/loc/{locale}.js"
+  }
+}
