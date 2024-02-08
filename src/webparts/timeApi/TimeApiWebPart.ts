@@ -9,11 +9,10 @@ import { BaseClientSideWebPart } from "@microsoft/sp-webpart-base";
 import { IReadonlyTheme } from "@microsoft/sp-component-base";
 
 import * as strings from "TimeApiWebPartStrings";
-import TimeApi from "./components/TimeApi";
 import { ITimeApiProps } from "./components/ITimeApiProps";
 import { HttpClient, HttpClientResponse,IHttpClientOptions} from "@microsoft/sp-http";
 import App from "./App";
-import { getSP } from "./api/pnpjsConfig";
+import { getSP } from "./Services/PNP_Service";
 
 export interface ITimeApiWebPartProps {
   description: string;
@@ -46,6 +45,7 @@ export default class TimeApiWebPart extends BaseClientSideWebPart<ITimeApiWebPar
     return this.context.httpClient
       .get(
         `https://www.scorebat.com/video-api/v1/`,
+        //Time API FAILS!!
         // `https://timeapi.io/api/TimeZone/AvailableTimeZones`,
         HttpClient.configurations.v1,
         httpOptions
@@ -64,6 +64,7 @@ export default class TimeApiWebPart extends BaseClientSideWebPart<ITimeApiWebPar
     //   method:"GET"
 
     // };
+    //TIME API FAILS
     // const callExternal= await  this.context.httpClient.get("https://timeapi.io/api/TimeZone/AvailableTimeZones",HttpClient.configurations.v1,httpClientOptions);
     // let response= await callExternal.json();
     // console.log(response);

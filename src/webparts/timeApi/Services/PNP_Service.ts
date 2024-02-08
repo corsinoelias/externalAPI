@@ -13,7 +13,7 @@ import { IItemAddResult } from "@pnp/sp/items";
 // eslint-disable-next-line no-var
 var _sp: SPFI = null;
 
-export const getSP = (context?: WebPartContext): SPFI => {
+export const getSP = (context?: WebPartContext): SPFI => {//Set up pnp sp service
   if (!!context) {
     // eslint-disable-line eqeqeq
     //You must add the @pnp/logging package to include the PnPLogging behavior it is no longer a peer dependency

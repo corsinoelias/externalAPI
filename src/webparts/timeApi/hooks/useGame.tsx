@@ -1,13 +1,11 @@
 import { useState, useContext } from "react";
 import * as React from "react";
-// import incorrectSound from './../../timeApi/assets/sounds/incorrect.mp3';
-// import correctSound from './../../timeApi/assets/sounds/correct.mp3';
-import { getQuestions } from "../api/api";
+import { getQuestions } from "../Services/ExternalAPIService";
 import config from "../config/quiz";
 import { PreferencesContext } from "../context/PreferencesContext";
 import { Answer, Quiz } from "../types/quiz";
 import useSound from "./useSound";
-import { _getQuizes, _addQuiz, _addQuizAttempt } from '../api/pnpjsConfig';
+import { _getQuizes, _addQuiz, _addQuizAttempt } from '../Services/PNP_Service';
 const useGame = (initialState: Quiz) => {
   const [loading, setLoading] = useState<boolean>(false);
   const [configQuiz, setConfigQuiz] = useState(initialState);
