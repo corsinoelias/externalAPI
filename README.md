@@ -4,6 +4,7 @@
   <source media="(prefers-color-scheme: light)" srcset="https://github.com/corsinoelias/externalAPI/blob/main/src/webparts/timeApi/assets/showcase.png">
   <img alt="Shows an illustrated sun in light mode and a moon with stars in dark mode." src="https://github.com/corsinoelias/externalAPI/blob/main/src/webparts/timeApi/assets/showcase.png">
 </picture>
+
 ## Summary
 
 I received a challenge to make an application in record time about questions using an external API to Sharepoint.
