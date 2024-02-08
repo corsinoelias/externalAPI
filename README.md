@@ -30,6 +30,8 @@ Finally, the results are published in a SharePoint list that has a Power Automat
 ## Prerequisites
 
 > Node.js 
+> Gulp
+> Yeoman 
 
 ## Solution
 
